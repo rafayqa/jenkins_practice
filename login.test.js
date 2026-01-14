@@ -13,3 +13,9 @@ test('invalid credentials returns error', () => {
 test('Intentional failure to test Jenkins HTML report', () => {
   expect(1 + 1).toBe(3); 
 });
+
+test('Intentional failure with login validation', () => {
+  // We know "admin/password123" returns "Dashboard"
+  const result = login("admin", "password123");
+  expect(result).toBe("Home"); 
+});
