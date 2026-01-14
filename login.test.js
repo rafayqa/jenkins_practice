@@ -1,5 +1,5 @@
 //Just checking cI Trigger 
-// Simple change to 
+//Triggering the Email Notifications
 const login = require('./login');
 
 test('valid credentials redirects to Dashboard', () => {
